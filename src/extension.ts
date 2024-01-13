@@ -16,7 +16,7 @@ export function activate(context: vscode.ExtensionContext) {
 	
 	context.subscriptions.push(disposableOpen);
 
-	let disposableTerminal = vscode.commands.registerCommand('run.terminal', (file) => {
+	let disposableTerminal = vscode.commands.registerCommand('run.run', (file) => {
 		if (file.scheme !== "file") {
 			console.log("Not a file, quitting");
 			return;
@@ -34,24 +34,6 @@ export function activate(context: vscode.ExtensionContext) {
 	});
 	
 	context.subscriptions.push(disposableTerminal);
-
-	let disposableRun = vscode.commands.registerCommand('run.run', (file) => {
-		if (file.scheme !== "file") {
-			console.log("Not a file, quitting");
-			return;
-		}
-		
-		const cp = require('child_process');
-		cp.exec(buildStartCommand(file.fsPath), (err :Error, stdout :string|Buffer, stderr :string|Buffer) => {
-			console.log('stdout: ' + stdout);
-			console.log('stderr: ' + stderr);
-			if (err) {
-				console.log('error: ' + err);
-			}
-		});
-	});
-
-	context.subscriptions.push(disposableRun);
 }
 
 export function deactivate() {}
