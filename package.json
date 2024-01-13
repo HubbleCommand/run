@@ -16,12 +16,20 @@
       {
         "command": "run.open",
         "title": "Open External"
+      },
+      {
+        "command": "run.run",
+        "title": "Run"
       }
     ],
     "menus": {
       "explorer/context": [
         {
           "command": "run.open"
+        },
+        {
+          "when": "(isWindows && resourceExtname == .exe) || true",
+          "command": "run.run"
         }
       ]
     }
