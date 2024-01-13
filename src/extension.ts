@@ -16,6 +16,25 @@ export function activate(context: vscode.ExtensionContext) {
 	
 	context.subscriptions.push(disposableOpen);
 
+	let disposableTerminal = vscode.commands.registerCommand('run.terminal', (file) => {
+		if (file.scheme !== "file") {
+			console.log("Not a file, quitting");
+			return;
+		}
+
+		let terminal = vscode.window.createTerminal({
+			name: "Run from Terminal",
+			//cwd: cwd,
+			hideFromUser: false,
+			//shellPath: script,
+			//shellArgs: args,
+		});
+		terminal.sendText(buildStartCommand(file.fsPath), true);
+		terminal.show();
+	});
+	
+	context.subscriptions.push(disposableTerminal);
+
 	let disposableRun = vscode.commands.registerCommand('run.run', (file) => {
 		if (file.scheme !== "file") {
 			console.log("Not a file, quitting");

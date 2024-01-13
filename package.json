@@ -18,6 +18,10 @@
         "title": "Open External"
       },
       {
+        "command": "run.terminal",
+        "title": "Run from Terminal"
+      },
+      {
         "command": "run.run",
         "title": "Run"
       }
@@ -26,6 +30,10 @@
       "explorer/context": [
         {
           "command": "run.open"
+        },
+        {
+          "when": "(isWindows && resourceExtname == .exe) || true",
+          "command": "run.terminal"
         },
         {
           "when": "(isWindows && resourceExtname == .exe) || true",
