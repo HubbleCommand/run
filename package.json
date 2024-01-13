@@ -14,10 +14,17 @@
   "contributes": {
     "commands": [
       {
-        "command": "run.helloWorld",
-        "title": "Hello World"
+        "command": "run.open",
+        "title": "Open External"
       }
-    ]
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "run.open"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
