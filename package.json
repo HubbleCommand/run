@@ -28,6 +28,15 @@
       }
     ],
     "menus": {
+      "editor/title/context": [
+        {
+          "command": "run.open"
+        },
+        {
+          "when": "(isWindows && resourceExtname == .exe) || isLinux || isMac",
+          "command": "run.run"
+        }
+      ],
       "explorer/context": [
         {
           "command": "run.open"
