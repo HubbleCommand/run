@@ -2,7 +2,7 @@
   "name": "run-runner",
   "displayName": "run",
   "description": "Utility to run executables from the Explorer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.85.0"
   },
