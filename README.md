@@ -13,17 +13,18 @@ You can run files like this in two different ways:
 - In the opened files toolbar
 
 ## Examples
-You can get access the new options from the menu from the explorer:
+You can access the new options from the explorer right-click menu:
 ![run from explorer](images/run_explorer.png)
 
 Or from the toolbar of opened files:
 ![run from toolbar](images/run_toolbar.png)
 
-After selecting the option, a new terminal will be opened, and your program will start:
+After selecting the `Run in Terminal` option, a new terminal will be opened, and your program will start:
 ![result](images/run_result_2.png)
 
-It works the same when using the `Open External` option:
+The `Open External` option is avaiable for all file types on all OSs. It allows you to open the selected file in a seperate app:
 ![result](images/open_explorer.png)
 
-Except that no terminal is opened, and the file will be opened in the OS selection for the file:
+The file will be opened in the OS's preffered app for the file, and if no app is selected, you will be promted to select one (if it's runnable or an app itself, it will launch):
+
 ![result](images/open_result.png)
