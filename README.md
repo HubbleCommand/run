@@ -1,5 +1,11 @@
 # run 
 
+[ext-url]: https://marketplace.visualstudio.com/items?itemName=hcommand.run-runner
+[![Ratings Badge](https://img.shields.io/vscode-marketplace/v/hcommand.run-runner.svg)][ext-url]
+[![Downloads Badge](https://img.shields.io/vscode-marketplace/d/hcommand.run-runner.svg)][ext-url]
+[![Ratings Badge](https://img.shields.io/vscode-marketplace/r/hcommand.run-runner.svg)][ext-url]
+[![License Badge](https://img.shields.io/github/license/hubblecommand/run.svg?color=blue)](https://github.com/hubblecommand/run/blob/master/LICENSE)
+
 VSCode extension to run executables directly from the Explorer.
 
 ## Features
