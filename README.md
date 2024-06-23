@@ -28,9 +28,9 @@ Or from the toolbar of opened files:
 After selecting the `Run in Terminal` option, a new terminal will be opened, and your program will start:
 ![result](images/run_result_2.png)
 
-The `Open External` option is avaiable for all file types on all OSs. It allows you to open the selected file in a seperate app:
+The `Open External` option is available for all file types on all OSs. It allows you to open the selected file in a seperate app:
 ![result](images/open_explorer.png)
 
-The file will be opened in the OS's preffered app for the file, and if no app is selected, you will be promted to select one (if it's runnable or an app itself, it will launch):
+The file will be opened in the OS's preffered app for the file (possibly VSCode), and if no app is selected, you will be promted to select one (if it's runnable or an app itself, it will launch):
 
 ![result](images/open_result.png)
