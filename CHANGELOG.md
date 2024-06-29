@@ -4,6 +4,9 @@ All notable changes to the "run" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.0.3]
+- Updated some dev dependencies to address [this high security vulnerability](https://github.com/HubbleCommand/run/security/dependabot/1)
+- Added logo
 
 ## [1.0.2]
 
