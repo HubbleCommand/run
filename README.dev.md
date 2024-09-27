@@ -20,3 +20,14 @@ Possible to run `vsce publish`.
 
 Otherwise, you can grap the packaged `.vsix` file and upload it through the [extension manager page](https://marketplace.visualstudio.com/manage/publishers).
 
+### Excluding files / directories
+[Documentation](https://vscode-docs.readthedocs.io/en/stable/tools/vscecli/#vscodeignore)
+
+It is possible to ignore files when building the extension. This is useful to ignore usage reports files.
+
+## Reports
+You can export some basic statistics about your extension in the Visual Studio Marketplace admin panel.
+
+Note that you can only get the data for the past 90 days MAX, which is why exported files are saved here.
+
+For generating graphs, go to the end of my post [here](https://hubblecommand.github.io/projects/vsc-ext-run.html) about this very package.
