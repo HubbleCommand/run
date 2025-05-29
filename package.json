@@ -34,7 +34,6 @@
           "command": "run.open"
         },
         {
-          "when": "(isWindows && resourceExtname == .exe) || isLinux || isMac",
           "command": "run.run"
         }
       ],
@@ -43,7 +42,6 @@
           "command": "run.open"
         },
         {
-          "when": "(isWindows && resourceExtname == .exe) || isLinux || isMac",
           "command": "run.run"
         }
       ]
