@@ -12,12 +12,27 @@ VSCode extension to run executables directly from the Explorer.
 ## Features
 
 This extension provides different ways of running files:
-- Run in Terminal: Creates a new Terminal, and starts the executable file. On Windows, only allows starting .exe files. There are no file type limitations for other platforms.
+- Run in Terminal: Creates a new Terminal, and runs the file.
 - Open External: Opens the file with the preffered external program. If the file is executable, will launch it.
 
 You can run files like this in two different ways:
 - From the File Explorer
 - In the opened files toolbar
+
+## Settings
+
+There is one setting that allows you to change the command that is executed for specific file types, or specific files.
+These can be changed in `run - command mapping` id `run.FiletypeMappings`
+
+For file types, this is useful if you need them to be executed with something in particular, i.e.:
+
+	'.sh': 'sh $0'
+
+For specific files, this can also be useful for setting arguments:
+
+	'bat.bat': 'start $0 -arg'
+
+The value `$0` will be replaced by the file path.
 
 ## Examples
 You can access the new options from the explorer right-click menu:

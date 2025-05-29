@@ -45,6 +45,20 @@
           "command": "run.run"
         }
       ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "run - command mapping",
+      "properties": {
+        "run.FiletypeMappings": {
+          "type": "object",
+          "default": {},
+          "description": "Define filetype - command mappings for run, i.e. {'.sh'; 'sh $0'}",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      }
     }
   },
   "scripts": {

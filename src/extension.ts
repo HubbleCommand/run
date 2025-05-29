@@ -1,7 +1,16 @@
 import * as vscode from 'vscode';
+import * as path from 'path';
 
-function buildStartCommand(path: string): string {
-	var command: string = path;
+function buildStartCommand(fspath: string): string {
+	const config = vscode.workspace.getConfiguration('run');
+	const fsMappings = config.get<Record<string, string>>('fsMappings') || {};
+	const extension = path.extname(fspath);
+	console.log(fspath)
+	if (extension in fsMappings) {
+		return fsMappings[extension].replace('$0', fspath);
+	}
+
+	var command: string = fspath;
 	if (process.platform === 'win32') {
 		command = "start " + command;
 	}
