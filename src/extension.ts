@@ -31,7 +31,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 	let disposableTerminal = vscode.commands.registerCommand('run.run', (file) => {
 		if (file.scheme !== "file") {
-			console.log("Not a file, quitting");
+			vscode.window.showWarningMessage('Not a file, so not running');
 			return;
 		}
 
