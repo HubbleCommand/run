@@ -3,7 +3,7 @@
   "displayName": "run",
   "description": "Utility to run executables from the Explorer",
   "version": "1.0.3",
-  "icon": "images/logo.png",
+  "icon": "logo.png",
   "engines": {
     "vscode": "^1.85.0"
   },

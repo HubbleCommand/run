@@ -11,3 +11,7 @@ vsc-extension-quickstart.md
 **/.vscode-test.*
 
 .reports/**
+
+images/**
+README.dev.md
+out/test/**
