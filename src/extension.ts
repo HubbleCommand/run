@@ -3,15 +3,15 @@ import * as path from 'path';
 
 function buildStartCommand(fspath: string): string {
 	const config = vscode.workspace.getConfiguration('run');
-	const fsMappings = config.get<Record<string, string>>('fsMappings') || {};
+	const ftMappings = config.get<Record<string, string>>('FiletypeMappings') || {};
 
 	const extension = path.extname(fspath);
-	if (extension in fsMappings) {
-		return fsMappings[extension].replace('$0', fspath);
+	if (extension in ftMappings) {
+		return ftMappings[extension].replace('$0', fspath);
 	}
 	const basename = path.basename(fspath);
-	if (basename in fsMappings) {
-		return fsMappings[basename].replace('$0', fspath);
+	if (basename in ftMappings) {
+		return ftMappings[basename].replace('$0', fspath);
 	}
 
 	var command: string = fspath;
