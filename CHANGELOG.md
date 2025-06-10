@@ -4,6 +4,9 @@ All notable changes to the "run" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.1.1]
+- fix issue with mapping name
+
 ## [1.1.0]
 - updated `serialize-javascript` and `mocha` [*](https://github.com/HubbleCommand/run/pull/2)
 - updated other packages
