@@ -2,7 +2,7 @@
   "name": "run-runner",
   "displayName": "run",
   "description": "Utility to run executables from the Explorer",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "icon": "logo.png",
   "engines": {
     "vscode": "^1.100.0"
@@ -57,6 +57,11 @@
           "additionalProperties": {
             "type": "string"
           }
+        },
+        "run.AutoWrapSpacedPaths": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically wrap file paths with spaces with quotes ''. Only disable if you have problems."
         }
       }
     }

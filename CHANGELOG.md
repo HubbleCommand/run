@@ -4,10 +4,17 @@ All notable changes to the "run" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.1.2]
+
+- fix issue with spaces in file path
+
+
 ## [1.1.1]
+
 - fix issue with mapping name
 
 ## [1.1.0]
+
 - updated `serialize-javascript` and `mocha` [*](https://github.com/HubbleCommand/run/pull/2)
 - updated other packages
 - removed file format limit on Windows for running option / command
@@ -29,6 +36,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Added existing commands when right-clicking opened file in toolbar
 
 ### Added
+
 - Existing commands added to `editor/title/context` menu contribution point
 - Open any file in system-preffered external tool
 
@@ -37,5 +45,6 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Initial release
 
 ### Added
+
 - Start executable in a new Terminal
 - Open any file in system-preffered external tool
